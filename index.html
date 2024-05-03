@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Rollenspiel</h1>
+
+    <form action="game.php" method="POST">
+        <h3>Spieler 1</h3>
+
+        <p>
+            <label for="p1_name">Name</label>
+            <input id="p1_name" type="text" name="p1_name" value="Spieler 1"></input>
+        </p>
+        <p>
+            <input id="p1_human" type="radio" name="p1_race" value="human" checked="checked">
+            <label for="p1_human">Mensch</label><br />
+            <input id="p1_orc" type="radio" name="p1_race" value="orc">
+            <label for="p1_orc">Orc</label><br />
+        </p>
+
+        <p>
+            <input type="radio" id="p1_strong_ring" name="p1_ring" value="strong_ring" checked="checked">
+            <label for="p1_strong_ring">Ring der Stärke</label><br />
+            <input type="radio" id="p1_strong_lucky" name="p1_ring" value="lucky_ring">
+            <label for="p1_lucky_ring">Ring des Glücks</label><br />
+        </p>
+
+        <h3>Spieler 2</h3>
+
+        <p>
+            <label for="p2_name">Name</label>
+            <input id="p2_name" type="text" name="p2_name" value="Spieler 2"></input>
+        </p>
+        <p>
+            <input id="p2_human" type="radio" name="p2_race" value="human" checked="checked">
+            <label for="p2_human">Mensch</label><br />
+            <input id="p2_orc" type="radio" name="p2_race" value="orc">
+            <label for="p2_orc">Orc</label><br />
+        </p>
+        <p>
+            <input type="radio" id="p2_strong_ring" name="p2_ring" value="strong_ring" checked="checked">
+            <label for="p2_strong_ring">Ring der Stärke</label><br />
+            <input type="radio" id="p2_strong_lucky" name="p2_ring" value="lucky_ring">
+            <label for="p2_lucky_ring">Ring des Glücks</label><br />
+        </p>
+        <input type="submit" name="btnStart" value="Spiel starten">
+
+    </form>
+</body>
+</html>
